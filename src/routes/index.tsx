@@ -1,24 +1,48 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SiteHeader } from "@/components/site/SiteHeader";
+import { About } from "@/components/site/About";
+import { WhatWeDo } from "@/components/site/WhatWeDo";
+import { ProductModels } from "@/components/site/ProductModels";
+import { RiskModes } from "@/components/site/RiskModes";
+import { Pricing } from "@/components/site/Pricing";
+import { CoreApproach } from "@/components/site/CoreApproach";
+import { WhyChoose } from "@/components/site/WhyChoose";
+import { Backtest } from "@/components/site/Backtest";
+import { SiteFooter } from "@/components/site/SiteFooter";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "Algo Aion — Automated XAUUSD Algo Trading for MT5";
+const description =
+  "Algo Aion is a disciplined MT5 algorithmic trading system for XAUUSD, with controlled risk modes, licence plans and transparent backtest results.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div id="home" className="min-h-screen bg-background">
+      <SiteHeader />
+      <main>
+        <About />
+        <WhatWeDo />
+        <ProductModels />
+        <RiskModes />
+        <Pricing />
+        <CoreApproach />
+        <WhyChoose />
+        <Backtest />
+      </main>
+      <SiteFooter />
     </div>
   );
 }
