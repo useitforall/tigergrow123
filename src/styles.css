@@ -73,31 +73,31 @@
 
 :root {
   --radius: 0.5rem;
-  --navy: oklch(0.24 0.09 264);
-  --navy-deep: oklch(0.17 0.07 264);
-  --brand: oklch(0.58 0.19 249);
-  --brand-light: oklch(0.72 0.16 235);
-  --ice: oklch(0.97 0.012 250);
+  --navy: oklch(0.24 0.02 264);
+  --navy-deep: oklch(0.16 0.015 264);
+  --brand: oklch(0.51 0.21 27);
+  --brand-light: oklch(0.63 0.22 27);
+  --ice: oklch(0.97 0.008 30);
 
   --background: oklch(1 0 0);
-  --foreground: oklch(0.24 0.09 264);
+  --foreground: oklch(0.24 0.02 264);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.09 264);
+  --card-foreground: oklch(0.24 0.02 264);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.24 0.09 264);
-  --primary: oklch(0.58 0.19 249);
+  --popover-foreground: oklch(0.24 0.02 264);
+  --primary: oklch(0.51 0.21 27);
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.96 0.015 250);
-  --secondary-foreground: oklch(0.24 0.09 264);
-  --muted: oklch(0.96 0.015 250);
-  --muted-foreground: oklch(0.55 0.03 257);
-  --accent: oklch(0.93 0.03 245);
-  --accent-foreground: oklch(0.24 0.09 264);
+  --secondary: oklch(0.96 0.012 30);
+  --secondary-foreground: oklch(0.24 0.02 264);
+  --muted: oklch(0.96 0.012 30);
+  --muted-foreground: oklch(0.53 0.02 30);
+  --accent: oklch(0.93 0.035 27);
+  --accent-foreground: oklch(0.24 0.02 264);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.91 0.015 250);
-  --input: oklch(0.91 0.015 250);
-  --ring: oklch(0.58 0.19 249);
+  --border: oklch(0.91 0.01 30);
+  --input: oklch(0.91 0.01 30);
+  --ring: oklch(0.51 0.21 27);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -113,8 +113,8 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
 
   --gradient-brand: linear-gradient(135deg, var(--brand-light), var(--brand));
-  --gradient-navy: linear-gradient(160deg, var(--navy-deep), var(--navy) 55%, oklch(0.3 0.11 258));
-  --shadow-card: 0 18px 40px -22px oklch(0.24 0.09 264 / 0.35);
+  --gradient-navy: linear-gradient(160deg, var(--navy-deep), var(--navy) 55%, oklch(0.28 0.03 20));
+  --shadow-card: 0 18px 40px -22px oklch(0.2 0.02 20 / 0.4);
 }
 
 
