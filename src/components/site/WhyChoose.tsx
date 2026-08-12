@@ -3,11 +3,11 @@ import whyChoose from "@/assets/why-choose.jpg";
 
 const points = [
   "MT5 Native Execution",
-  "Responsive Client Support",
-  "XAUUSD Specialized Logic",
+  "Premium Priority Support",
+  "Crypto, Forex & Indian Markets",
   "Transparent Performance",
   "Controlled Risk Framework",
-  "24/5 Automated Operation",
+  "Lifetime Software Updates",
 ];
 
 export function WhyChoose() {
@@ -15,15 +15,15 @@ export function WhyChoose() {
     <section className="surface-brand py-20 text-primary-foreground">
       <div className="mx-auto grid max-w-[1200px] items-center gap-12 px-5 lg:grid-cols-2">
         <div>
-          <p className="eyebrow text-primary-foreground/80">Why choose Algo Aion</p>
+          <p className="eyebrow text-primary-foreground/80">Why choose Algo Tiger Grow</p>
           <h2 className="mt-4 inline-block border-b-2 border-primary-foreground pb-3 text-4xl font-bold leading-[1.15] sm:text-5xl">
             Built for Smarter,
             <br />
             Disciplined Trading.
           </h2>
           <p className="mt-6 max-w-lg text-sm leading-relaxed text-primary-foreground/85">
-            AION brings together structured strategy rules, controlled risk and dependable automation to support
-            consistent decision-making in the gold market.
+            The Tiger Grow AI algo bot brings together structured strategy rules, controlled risk and dependable
+            automation so you can pursue consistent profits across every market you trade.
           </p>
 
           <ul className="mt-10 grid gap-5 sm:grid-cols-2">

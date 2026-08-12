@@ -5,17 +5,17 @@ const points = [
   {
     icon: Target,
     title: "Our Mission & Vision",
-    body: "To make disciplined algorithmic trading more accessible through structured automation, controlled risk and transparent long-term performance.",
+    body: "To make disciplined algorithmic trading accessible to every trader through AI-driven automation, controlled risk and transparent long-term performance.",
   },
   {
     icon: ShieldCheck,
     title: "Capital Protection First",
-    body: "Predefined position controls and exit conditions keep every AION trade inside a clear, repeatable risk framework.",
+    body: "Predefined position controls and exit conditions keep every Tiger Grow trade inside a clear, repeatable risk framework.",
   },
   {
     icon: LineChart,
-    title: "XAUUSD Specialisation",
-    body: "One focused MT5 system, engineered around the behaviour of the gold market rather than generic multi-symbol logic.",
+    title: "Software + Indicators",
+    body: "A complete toolkit: trading algo software for automated execution and trading indicator software for sharper manual decisions.",
   },
 ];
 
@@ -26,7 +26,7 @@ export function About() {
         <div className="relative">
           <img
             src={aboutTeam}
-            alt="Trading team reviewing XAUUSD charts on multiple monitors"
+            alt="Trading team reviewing live market charts on multiple monitors"
             width={1000}
             height={800}
             loading="lazy"
@@ -42,13 +42,17 @@ export function About() {
 
         <div>
           <p className="eyebrow flex items-center gap-3 text-primary">
-            <span className="h-0.5 w-8 bg-primary" /> About Algo Aion
+            <span className="h-0.5 w-8 bg-primary" /> About Algo Tiger Grow
           </p>
           <h2 className="mt-5 inline-block border-b-4 border-primary pb-3 text-4xl font-bold leading-[1.1] text-navy sm:text-5xl">
-            Intelligent Automation.
+            AI Automation.
             <br />
-            Built for Discipline.
+            Built for Consistency.
           </h2>
+          <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground">
+            We give traders the software, indicators and setup support they need to trade a rule-based system with
+            confidence — so results come from process, not emotion.
+          </p>
 
           <div className="mt-10 space-y-8">
             {points.map(({ icon: Icon, title, body }) => (

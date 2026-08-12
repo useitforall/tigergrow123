@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/SiteHeader";
+import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
 import { WhatWeDo } from "@/components/site/WhatWeDo";
 import { ProductModels } from "@/components/site/ProductModels";
@@ -10,9 +11,9 @@ import { WhyChoose } from "@/components/site/WhyChoose";
 import { Backtest } from "@/components/site/Backtest";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
-const title = "Algo Aion — Automated XAUUSD Algo Trading for MT5";
+const title = "Algo Tiger Grow — AI Algo Trading Software & Indicators";
 const description =
-  "Algo Aion is a disciplined MT5 algorithmic trading system for XAUUSD, with controlled risk modes, licence plans and transparent backtest results.";
+  "Tiger Grow AI Algo Bot: next generation AI trading algo software and indicator software for MT5 — lifetime licence, all risk modes, crypto, forex and Indian markets.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,6 +34,7 @@ function Index() {
     <div id="home" className="min-h-screen bg-background">
       <SiteHeader />
       <main>
+        <Hero />
         <About />
         <WhatWeDo />
         <ProductModels />

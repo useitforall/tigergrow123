@@ -1,10 +1,10 @@
 import { ChevronRight } from "lucide-react";
 
 const items = [
-  { pct: 78, label: "Execution", title: "Strategy Execution", body: "AION identifies qualified XAUUSD conditions and executes predefined trading rules with speed, precision and discipline." },
-  { pct: 65, label: "Risk Control", title: "Risk Management", body: "Structured position controls and predefined exit conditions help AION keep capital protection central to every trade." },
+  { pct: 78, label: "Execution", title: "Strategy Execution", body: "The AI bot identifies qualified market conditions and executes predefined trading rules with speed, precision and discipline." },
+  { pct: 65, label: "Risk Control", title: "Risk Management", body: "Structured position controls and predefined exit conditions help Tiger Grow keep capital protection central to every trade." },
   { pct: 50, label: "Analysis", title: "Market Analysis", body: "The system continuously evaluates price behaviour and strategy conditions without emotional decision-making." },
-  { pct: 69, label: "Automation", title: "24/5 Automation", body: "AION remains ready throughout the forex trading week, applying the same rules consistently whenever valid setups appear." },
+  { pct: 69, label: "Automation", title: "24/5 Automation", body: "The bot stays ready across crypto, forex and Indian market sessions, applying the same rules consistently whenever valid setups appear." },
 ];
 
 function Ring({ pct, label }: { pct: number; label: string }) {
@@ -40,7 +40,7 @@ export function CoreApproach() {
       <div className="pointer-events-none absolute -right-24 top-8 h-[560px] w-[560px] rounded-full border border-primary-foreground/10" aria-hidden />
       <div className="relative mx-auto max-w-[1100px] px-5">
         <div className="text-center">
-          <p className="eyebrow text-brand-light">Aion capabilities</p>
+          <p className="eyebrow text-brand-light">Tiger Grow capabilities</p>
           <h2 className="relative mt-4 inline-block border-b-2 border-brand-light pb-3 text-4xl font-bold sm:text-5xl">
             Core Approach
             <span className="surface-brand absolute -right-8 -top-2 grid h-7 w-7 place-items-center rounded-full text-[0.6rem] font-bold">

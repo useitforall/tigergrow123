@@ -14,10 +14,10 @@ const headerStyles = [
 
 export function RiskModes() {
   return (
-    <section className="bg-background py-24">
+    <section id="modes" className="bg-background py-24">
       <div className="mx-auto max-w-[1200px] px-5">
         <div className="text-center">
-          <p className="eyebrow text-primary">Aion trading modes</p>
+          <p className="eyebrow text-primary">Tiger Grow trading modes</p>
           <h2 className="mt-4 text-4xl font-bold text-navy sm:text-5xl">
             Choose Your <span className="text-primary underline decoration-4 underline-offset-8">Risk Mode</span>
           </h2>

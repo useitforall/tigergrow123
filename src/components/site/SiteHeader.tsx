@@ -1,6 +1,7 @@
 import { Youtube, Instagram, Send, MessageCircle, ChevronDown, ArrowDown } from "lucide-react";
+import logo from "@/assets/tiger-grow-logo.jpg.asset.json";
 
-const nav = ["Home", "Products", "Modes", "Prices", "Results", "Contact"];
+const nav = ["Home", "Software", "Models", "Modes", "Prices", "Results", "Contact"];
 
 const socials = [
   { icon: Youtube, label: "YouTube" },
@@ -14,13 +15,15 @@ export function SiteHeader() {
     <header className="surface-navy sticky top-0 z-50">
       <div className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-x-8 gap-y-3 px-5 py-4">
         <a href="#home" className="flex items-center gap-3">
-          <span className="grid h-11 w-11 place-items-center rounded-full border border-brand-light/50 text-brand-light">
-            <BrainMark />
+          <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-full bg-primary-foreground">
+            <img src={logo.url} alt="Algo Tiger Grow logo" width={44} height={44} className="h-full w-full object-contain" />
           </span>
-          <span className="font-display text-2xl font-bold text-brand-light">Algo Aion</span>
+          <span className="font-display text-2xl font-bold text-primary-foreground">
+            Algo <span className="text-brand-light">Tiger Grow</span>
+          </span>
         </a>
 
-        <nav className="hidden items-center gap-7 text-sm font-medium text-primary-foreground/85 lg:flex">
+        <nav className="hidden items-center gap-6 text-sm font-medium text-primary-foreground/85 lg:flex">
           {nav.map((item, i) => (
             <a
               key={item}
@@ -37,7 +40,7 @@ export function SiteHeader() {
 
         <div className="ml-auto flex items-center gap-4">
           <p className="hidden font-display text-sm font-bold text-primary-foreground md:block">
-            +91 9030470808 <span className="mx-1 text-primary-foreground/40">|</span> +91 9030570808
+            +91 9182630158 <span className="mx-1 text-primary-foreground/40">|</span> +91 7989930158
           </p>
           <div className="flex items-center gap-2">
             {socials.map(({ icon: Icon, label }) => (
@@ -60,19 +63,10 @@ export function SiteHeader() {
             Scroll to explore <ArrowDown className="h-4 w-4 animate-bounce" />
           </span>
           <span className="eyebrow flex items-center gap-2 rounded-full border border-brand-light/40 px-4 py-1.5 text-brand-light">
-            <span className="h-2 w-2 rounded-full bg-emerald-400" /> Aion system active
+            <span className="h-2 w-2 rounded-full bg-emerald-400" /> Tiger Grow AI bot active
           </span>
         </div>
       </div>
     </header>
-  );
-}
-
-function BrainMark() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.4">
-      <circle cx="12" cy="12" r="9" />
-      <path d="M12 3v18M12 7c-3 0-4 2-4 5s1 5 4 5M12 7c3 0 4 2 4 5s-1 5-4 5" />
-    </svg>
   );
 }
