@@ -3,28 +3,28 @@ import { Activity, Diamond, ArrowUpRight, ArrowRight } from "lucide-react";
 const cards = [
   {
     icon: Activity,
-    title: "Intelligent Trade Execution",
-    body: "AION continuously evaluates its defined strategy conditions and executes qualified opportunities without emotional interference.",
-    cta: "Explore approach",
+    title: "Trading Algo Software",
+    body: "The Tiger Grow AI bot runs on your MT5 account, evaluates strategy conditions in real time and executes qualified trades without emotional interference.",
+    cta: "Explore the bot",
   },
   {
     icon: Diamond,
-    title: "Controlled Risk Management",
-    body: "Every trading decision follows structured risk parameters designed to protect capital and support consistent long-term operation.",
-    cta: "View risk framework",
+    title: "Trading Indicator Software",
+    body: "Precision buy/sell signals, trend strength and entry zones plotted on your chart so manual traders can act with the same rule-based clarity.",
+    cta: "View indicators",
     featured: true,
   },
   {
     icon: ArrowUpRight,
-    title: "Transparent Performance",
-    body: "Review live-account activity and historical backtest results clearly, with practical information instead of unrealistic promises.",
-    cta: "View results",
+    title: "Setup, Support & Updates",
+    body: "Installation assistance, premium priority technical support and lifetime software updates keep your system running the way it should.",
+    cta: "Get assistance",
   },
 ];
 
 export function WhatWeDo() {
   return (
-    <section id="products" className="relative overflow-hidden bg-background py-24">
+    <section id="software" className="relative overflow-hidden bg-background py-24">
       <div className="absolute -right-40 top-10 h-[520px] w-[520px] rounded-full bg-ice" aria-hidden />
       <div className="relative mx-auto max-w-[1200px] px-5">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-end">
@@ -39,8 +39,8 @@ export function WhatWeDo() {
             </h2>
           </div>
           <p className="text-sm leading-relaxed text-muted-foreground lg:pb-3">
-            Algo AION brings strategy, risk controls and automated execution together in one focused MT5 trading
-            system built for the XAUUSD market.
+            Algo Tiger Grow combines an AI algo bot, professional indicators and hands-on support into one package
+            built for crypto, forex and Indian markets.
           </p>
         </div>
 

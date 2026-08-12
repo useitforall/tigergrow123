@@ -1,4 +1,5 @@
-import { Youtube, Instagram, Send, MessageCircle, Phone, Mail } from "lucide-react";
+import { Youtube, Instagram, Send, MessageCircle, Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/tiger-grow-logo.jpg.asset.json";
 
 const socials = [Youtube, Instagram, Send, MessageCircle];
 
@@ -7,10 +8,17 @@ export function SiteFooter() {
     <footer id="contact" className="surface-navy text-primary-foreground">
       <div className="mx-auto grid max-w-[1200px] gap-12 px-5 py-20 md:grid-cols-3">
         <div>
-          <p className="font-display text-2xl font-bold text-brand-light">Algo Aion</p>
+          <div className="flex items-center gap-3">
+            <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-full bg-primary-foreground">
+              <img src={logo.url} alt="Algo Tiger Grow logo" width={44} height={44} className="h-full w-full object-contain" />
+            </span>
+            <p className="font-display text-2xl font-bold text-primary-foreground">
+              Algo <span className="text-brand-light">Tiger Grow</span>
+            </p>
+          </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-primary-foreground/70">
-            A focused MT5 algorithmic trading system for XAUUSD, built around structured strategy rules, controlled
-            risk and transparent performance.
+            Tiger Grow AI Algo Bot — next generation AI trading software and indicator software for crypto, forex and
+            Indian markets, built around structured strategy rules and controlled risk.
           </p>
           <div className="mt-6 flex gap-2">
             {socials.map((Icon, i) => (
@@ -29,7 +37,7 @@ export function SiteFooter() {
         <div>
           <h3 className="text-sm font-bold tracking-widest">QUICK LINKS</h3>
           <ul className="mt-5 space-y-3 text-sm text-primary-foreground/70">
-            {["Home", "Products", "Modes", "Prices", "Results"].map((l) => (
+            {["Home", "Software", "Models", "Modes", "Prices", "Results"].map((l) => (
               <li key={l}>
                 <a href={`#${l.toLowerCase()}`} className="transition-colors hover:text-brand-light">
                   {l}
@@ -37,27 +45,46 @@ export function SiteFooter() {
               </li>
             ))}
           </ul>
+          <p className="mt-8 font-display text-base font-bold">Tiger Narendra</p>
+          <p className="text-xs tracking-widest text-primary-foreground/60">FOUNDER &amp; CEO</p>
         </div>
 
         <div>
           <h3 className="text-sm font-bold tracking-widest">CONTACT</h3>
           <ul className="mt-5 space-y-3 text-sm text-primary-foreground/70">
             <li className="flex items-center gap-3">
-              <Phone className="h-4 w-4 text-brand-light" /> +91 9030470808
+              <Phone className="h-4 w-4 text-brand-light" />
+              <a href="tel:+919182630158" className="hover:text-brand-light">+91 9182630158</a>
             </li>
             <li className="flex items-center gap-3">
-              <Phone className="h-4 w-4 text-brand-light" /> +91 9030570808
+              <Phone className="h-4 w-4 text-brand-light" />
+              <a href="tel:+917989930158" className="hover:text-brand-light">+91 7989930158</a>
             </li>
             <li className="flex items-center gap-3">
-              <Mail className="h-4 w-4 text-brand-light" /> support@algo-aion.com
+              <Mail className="h-4 w-4 text-brand-light" />
+              <a href="mailto:tigergrow1122@gmail.com" className="hover:text-brand-light">tigergrow1122@gmail.com</a>
+            </li>
+            <li className="flex items-center gap-3">
+              <Mail className="h-4 w-4 text-brand-light" />
+              <a href="mailto:tigernarendra1415@gmail.com" className="hover:text-brand-light">tigernarendra1415@gmail.com</a>
+            </li>
+            <li className="flex gap-3">
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-light" />
+              <span>
+                Metpally, opposite SBI, ADB Bank &amp; Canara Bank, 505325, Telangana, India
+              </span>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="h-4 w-4 text-center text-xs font-bold text-brand-light">T</span>
+              <a href="https://tigergrow.in" className="hover:text-brand-light">tigergrow.in</a>
             </li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-primary-foreground/10 py-6 text-center text-xs text-primary-foreground/50">
-        © {new Date().getFullYear()} Algo Aion. Trading involves risk. Past performance is not indicative of future
-        results.
+        © {new Date().getFullYear()} Algo Tiger Grow. Trading involves risk. Past performance is not indicative of
+        future results.
       </div>
     </footer>
   );
