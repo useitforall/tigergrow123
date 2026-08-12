@@ -1,5 +1,5 @@
 import { Check, Bitcoin, IndianRupee, LineChart, Globe } from "lucide-react";
-import logo from "@/assets/tiger-grow-logo.jpg.asset.json";
+import { TradingAnimation } from "@/components/site/TradingAnimation";
 
 const features = [
   "1 Approved MT5 Account",
@@ -63,14 +63,26 @@ export function Hero() {
         </div>
 
         <div>
-          <div className="mx-auto w-full max-w-md rounded-sm bg-primary-foreground p-8 shadow-[var(--shadow-card)]">
-            <img
-              src={logo.url}
-              alt="Algo Tiger Grow AI algo bot brand mark"
-              width={600}
-              height={370}
-              className="w-full object-contain"
-            />
+          <div className="relative mx-auto w-full max-w-md rounded-sm border border-primary-foreground/15 bg-primary-foreground/[0.04] p-6 backdrop-blur-sm">
+            <div className="flex items-center justify-between text-[0.6rem] font-bold tracking-[0.2em] text-primary-foreground/60">
+              <span>TIGER GROW AI BOT</span>
+              <span className="flex items-center gap-2 text-brand-light">
+                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand-light" /> LIVE
+              </span>
+            </div>
+            <TradingAnimation />
+            <div className="mt-2 grid grid-cols-3 gap-2 text-center">
+              {[
+                ["Win Rate", "78%"],
+                ["Risk Modes", "3"],
+                ["Uptime", "24/5"],
+              ].map(([k, v]) => (
+                <div key={k} className="rounded-sm bg-primary-foreground/[0.06] py-2">
+                  <p className="font-display text-lg font-bold text-brand-light">{v}</p>
+                  <p className="text-[0.55rem] tracking-widest text-primary-foreground/60">{k}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <p className="eyebrow mt-10 text-center text-primary-foreground/60">Works on</p>
