@@ -10,23 +10,23 @@ const rows: [string, string, string, string][] = [
   ["Strategy Updates", "May require customer-side update", "Updated during managed support", "Updated centrally"],
   ["Result Similarity", "Based on customer account execution", "Based on customer account execution", "May differ from master due to copying delays"],
   ["Customer Involvement", "Higher", "Medium", "Lower"],
-  ["AION Operational Support", "Technical support", "Integration and monitoring", "Master and copy-system monitoring"],
+  ["Tiger Grow Operational Support", "Technical support", "Integration and monitoring", "Master and copy-system monitoring"],
   ["Best Suited For", "Independent customers", "Performance-linked customers", "Customers seeking simple trade replication"],
 ];
 
 export function ProductModels() {
   return (
-    <section id="modes" className="surface-navy relative overflow-hidden py-24 text-primary-foreground">
+    <section id="models" className="surface-navy relative overflow-hidden py-24 text-primary-foreground">
       <div className="pointer-events-none absolute -right-32 top-0 h-[640px] w-[640px] rounded-full border border-primary-foreground/10" aria-hidden />
       <div className="relative mx-auto max-w-[1200px] px-5">
         <div className="text-center">
-          <p className="eyebrow text-brand-light">Aion business models</p>
+          <p className="eyebrow text-brand-light">Tiger Grow business models</p>
           <h2 className="mt-4 text-4xl font-bold sm:text-5xl">
             Choose the Right{" "}
             <span className="border-b-4 border-brand-light pb-2 text-brand-light">Product Model</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-sm text-primary-foreground/75">
-            Compare how each AION product works, where the algorithm operates, and the level of support and
+            Compare how each Tiger Grow product works, where the algorithm operates, and the level of support and
             involvement provided.
           </p>
         </div>

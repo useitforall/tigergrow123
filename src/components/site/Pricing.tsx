@@ -7,7 +7,7 @@ const plans = [
     sub: "Essential Access For Individual Traders",
     was: "$999/-",
     now: "499",
-    features: ["1 Approved MT5 Account", "1 Year Licence Validity", "Access To All Risk Modes", "Full AION Algo Access", "Installation Assistance"],
+    features: ["1 Approved MT5 Account", "1 Year Licence Validity", "Access To All Risk Modes", "Full Tiger Grow Access", "Installation Assistance Included"],
   },
   {
     letter: "S",
@@ -15,7 +15,7 @@ const plans = [
     sub: "Extended Access With Long-Term Value",
     was: "$1,499/-",
     now: "749",
-    features: ["1 Approved MT5 Account", "5 Years Licence Validity", "Access To All Risk Modes", "Full AION Algo Access", "Priority Setup Support"],
+    features: ["1 Approved MT5 Account", "5 Years Licence Validity", "Access To All Risk Modes", "Full Tiger Grow Access", "Premium Priority Technical Support"],
   },
   {
     letter: "P",
@@ -23,7 +23,7 @@ const plans = [
     sub: "Permanent Access For Serious Traders",
     was: "$1,999/-",
     now: "999",
-    features: ["1 Approved MT5 Account", "Lifetime Licence Duration", "Access To All Risk Modes", "Full AION Algo Access", "Strategy Update Access"],
+    features: ["1 Approved MT5 Account", "Lifetime Licence Duration", "Access To All Risk Modes", "Full Tiger Grow Access", "Lifetime Software Updates"],
   },
   {
     letter: "E",
@@ -42,12 +42,12 @@ export function Pricing() {
       <div className="pointer-events-none absolute -left-40 top-16 h-[520px] w-[520px] rounded-full bg-accent/40" aria-hidden />
       <div className="relative mx-auto max-w-[1200px] px-5">
         <div className="text-center">
-          <p className="eyebrow text-primary">Aion licence pricing</p>
+          <p className="eyebrow text-primary">Tiger Grow licence pricing</p>
           <h2 className="mt-4 text-4xl font-bold text-navy sm:text-5xl">
             Choose Your <span className="text-primary underline decoration-4 underline-offset-8">Licence Plan</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-sm text-muted-foreground">
-            Compare AION licence packages and select the plan that best matches your trading-account requirements and
+            Compare Tiger Grow licence packages and select the plan that best matches your trading-account requirements and
             preferred licence duration.
           </p>
         </div>

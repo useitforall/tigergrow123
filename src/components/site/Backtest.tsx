@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 
 const settings: [string, string][] = [
-  ["Expert", "AION"],
+  ["Expert", "Tiger Grow AI Algo Bot"],
   ["Symbol", "XAUUSD"],
   ["Period", "M5 (2026.01.01 - 2026.01.31)"],
   ["Company", "Vantage Markets (Pty) Ltd"],
@@ -31,7 +31,7 @@ export function Backtest() {
       <div className="mx-auto max-w-[1200px] px-5">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <p className="eyebrow text-muted-foreground">Aion strategy performance</p>
+            <p className="eyebrow text-muted-foreground">Tiger Grow strategy performance</p>
             <h2 className="mt-4 text-4xl font-bold text-navy sm:text-5xl">
               Backtest <span className="border-b-4 border-primary pb-2">Results</span>
             </h2>
