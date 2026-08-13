@@ -1,13 +1,14 @@
 import { Youtube, Instagram, Send, MessageCircle, ChevronDown, ArrowDown } from "lucide-react";
-import logo from "@/assets/tiger-grow-logo.jpg.asset.json";
+import logo from "@/assets/tiger-grow-mark.png.asset.json";
+import { SOCIAL_LINKS } from "@/lib/site-links";
 
 const nav = ["Home", "Software", "Models", "Modes", "Prices", "Results", "Contact"];
 
 const socials = [
-  { icon: Youtube, label: "YouTube" },
-  { icon: Instagram, label: "Instagram" },
-  { icon: Send, label: "Telegram" },
-  { icon: MessageCircle, label: "WhatsApp" },
+  { icon: Youtube, label: "YouTube", href: SOCIAL_LINKS.youtube },
+  { icon: Instagram, label: "Instagram", href: SOCIAL_LINKS.instagram },
+  { icon: Send, label: "Telegram", href: SOCIAL_LINKS.telegram },
+  { icon: MessageCircle, label: "WhatsApp", href: SOCIAL_LINKS.whatsapp },
 ];
 
 export function SiteHeader() {
@@ -43,10 +44,12 @@ export function SiteHeader() {
             +91 9182630158 <span className="mx-1 text-primary-foreground/40">|</span> +91 7989930158
           </p>
           <div className="flex items-center gap-2">
-            {socials.map(({ icon: Icon, label }) => (
+            {socials.map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
-                href="#contact"
+                href={href}
+                target="_blank"
+                rel="noreferrer noopener"
                 aria-label={label}
                 className="surface-brand grid h-8 w-8 place-items-center rounded-full text-primary-foreground transition-transform hover:scale-110"
               >
