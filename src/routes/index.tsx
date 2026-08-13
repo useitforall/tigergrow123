@@ -44,9 +44,13 @@ function Index() {
         <ProductModels />
         <RiskModes />
         <Pricing />
+        <Partnerships />
         <CoreApproach />
         <WhyChoose />
         <Backtest />
+        <Testimonials />
+        <ContactSection />
+        <Responsibility />
       </main>
       <SiteFooter />
     </div>
