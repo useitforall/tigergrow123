@@ -80,7 +80,7 @@ const models = [
 ];
 
 export function ProductModels() {
-  const [active, setActive] = useState(models[0].id);
+  const [active, setActive] = useState(models[0]!.id);
   const model = models.find((m) => m.id === active)!;
 
   return (
