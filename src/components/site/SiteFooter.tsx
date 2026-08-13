@@ -1,11 +1,17 @@
 import { Youtube, Instagram, Send, MessageCircle, Phone, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/tiger-grow-logo.jpg.asset.json";
+import logo from "@/assets/tiger-grow-mark.png.asset.json";
+import { SOCIAL_LINKS } from "@/lib/site-links";
 
-const socials = [Youtube, Instagram, Send, MessageCircle];
+const socials = [
+  { Icon: Youtube, href: SOCIAL_LINKS.youtube, label: "YouTube" },
+  { Icon: Instagram, href: SOCIAL_LINKS.instagram, label: "Instagram" },
+  { Icon: Send, href: SOCIAL_LINKS.telegram, label: "Telegram" },
+  { Icon: MessageCircle, href: SOCIAL_LINKS.whatsapp, label: "WhatsApp" },
+];
 
 export function SiteFooter() {
   return (
-    <footer id="contact" className="surface-navy text-primary-foreground">
+    <footer className="surface-navy text-primary-foreground">
       <div className="mx-auto grid max-w-[1200px] gap-12 px-5 py-20 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-3">
@@ -21,11 +27,13 @@ export function SiteFooter() {
             Indian markets, built around structured strategy rules and controlled risk.
           </p>
           <div className="mt-6 flex gap-2">
-            {socials.map((Icon, i) => (
+            {socials.map(({ Icon, href, label }) => (
               <a
-                key={i}
-                href="#contact"
-                aria-label="Social profile"
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label={label}
                 className="surface-brand grid h-9 w-9 place-items-center rounded-full transition-transform hover:scale-110"
               >
                 <Icon className="h-4 w-4" />
@@ -37,7 +45,7 @@ export function SiteFooter() {
         <div>
           <h3 className="text-sm font-bold tracking-widest">QUICK LINKS</h3>
           <ul className="mt-5 space-y-3 text-sm text-primary-foreground/70">
-            {["Home", "Software", "Models", "Modes", "Prices", "Results"].map((l) => (
+            {["Home", "Software", "Models", "Modes", "Prices", "Results", "Contact"].map((l) => (
               <li key={l}>
                 <a href={`#${l.toLowerCase()}`} className="transition-colors hover:text-brand-light">
                   {l}
@@ -71,7 +79,7 @@ export function SiteFooter() {
             <li className="flex gap-3">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-light" />
               <span>
-                Metpally, opposite SBI, ADB Bank &amp; Canara Bank, 505325, Telangana, India
+                Metpally, new SBI Bank and ADP Canara Bank opposite, 505325, Jagityal district, Telangana state
               </span>
             </li>
             <li className="flex items-center gap-3">

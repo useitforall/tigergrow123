@@ -9,6 +9,10 @@ import { Pricing } from "@/components/site/Pricing";
 import { CoreApproach } from "@/components/site/CoreApproach";
 import { WhyChoose } from "@/components/site/WhyChoose";
 import { Backtest } from "@/components/site/Backtest";
+import { Partnerships } from "@/components/site/Partnerships";
+import { Testimonials } from "@/components/site/Testimonials";
+import { ContactSection } from "@/components/site/ContactSection";
+import { Responsibility } from "@/components/site/Responsibility";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
 const title = "Algo Tiger Grow — AI Algo Trading Software & Indicators";
@@ -40,9 +44,13 @@ function Index() {
         <ProductModels />
         <RiskModes />
         <Pricing />
+        <Partnerships />
         <CoreApproach />
         <WhyChoose />
         <Backtest />
+        <Testimonials />
+        <ContactSection />
+        <Responsibility />
       </main>
       <SiteFooter />
     </div>

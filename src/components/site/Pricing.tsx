@@ -1,33 +1,38 @@
 import { Check } from "lucide-react";
+import { whatsappLink } from "@/lib/site-links";
 
 const plans = [
   {
     letter: "B",
     name: "Basic",
     sub: "Essential Access For Individual Traders",
-    was: "$999/-",
-    now: "499",
-    features: ["1 Approved MT5 Account", "1 Year Licence Validity", "Access To All Risk Modes", "Full Tiger Grow Access", "Installation Assistance Included"],
-  },
-  {
-    letter: "S",
-    name: "Standard",
-    sub: "Extended Access With Long-Term Value",
-    was: "$1,499/-",
-    now: "749",
-    features: ["1 Approved MT5 Account", "5 Years Licence Validity", "Access To All Risk Modes", "Full Tiger Grow Access", "Premium Priority Technical Support"],
+    was: "$1999/-",
+    now: "999",
+    features: [
+      "1 Approved MT5 Account",
+      "1 Year Licence Validity",
+      "Access To All Risk Modes",
+      "Full Tiger Grow Access",
+      "Installation Assistance Included",
+    ],
   },
   {
     letter: "P",
     name: "Premium",
     sub: "Permanent Access For Serious Traders",
-    was: "$1,999/-",
-    now: "999",
-    features: ["1 Approved MT5 Account", "Lifetime Licence Duration", "Access To All Risk Modes", "Full Tiger Grow Access", "Lifetime Software Updates"],
+    was: "$2999/-",
+    now: "1499",
+    features: [
+      "1 Approved MT5 Account",
+      "Lifetime Licence Duration",
+      "Access To All Risk Modes",
+      "Full Tiger Grow Access",
+      "Lifetime Software Updates",
+    ],
   },
   {
-    letter: "E",
-    name: "Enterprise",
+    letter: "F",
+    name: "Franchise",
     sub: "Complete Branded Business Solution",
     was: "$4,999/-",
     now: "2,499",
@@ -52,7 +57,7 @@ export function Pricing() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {plans.map((p) => (
             <article
               key={p.name}
@@ -106,7 +111,9 @@ export function Pricing() {
               </ul>
 
               <a
-                href="#contact"
+                href={whatsappLink(`Hi Tiger Grow, I'm interested in the ${p.name} licence plan.`)}
+                target="_blank"
+                rel="noreferrer noopener"
                 className={`mt-8 inline-flex items-center justify-center rounded-sm px-5 py-3 text-sm font-semibold transition-opacity hover:opacity-90 ${
                   p.featured ? "surface-brand text-primary-foreground" : "bg-navy text-primary-foreground"
                 }`}

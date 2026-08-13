@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { BacktestGallery } from "@/components/site/BacktestGallery";
 
 const settings: [string, string][] = [
   ["Expert", "Tiger Grow AI Algo Bot"],
@@ -73,6 +74,8 @@ export function Backtest() {
             </p>
           </div>
         </div>
+
+        <BacktestGallery />
       </div>
     </section>
   );

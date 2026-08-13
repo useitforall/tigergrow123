@@ -73,31 +73,31 @@
 
 :root {
   --radius: 0.5rem;
-  --navy: oklch(0.24 0.02 264);
-  --navy-deep: oklch(0.16 0.015 264);
-  --brand: oklch(0.51 0.21 27);
-  --brand-light: oklch(0.63 0.22 27);
-  --ice: oklch(0.97 0.008 30);
+  --navy: oklch(0.34 0.035 58);
+  --navy-deep: oklch(0.25 0.03 55);
+  --brand: oklch(0.56 0.095 58);
+  --brand-light: oklch(0.76 0.075 68);
+  --ice: oklch(0.965 0.014 76);
 
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.24 0.02 264);
+  --background: oklch(0.995 0.005 80);
+  --foreground: oklch(0.28 0.03 58);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.02 264);
+  --card-foreground: oklch(0.28 0.03 58);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.24 0.02 264);
-  --primary: oklch(0.51 0.21 27);
+  --popover-foreground: oklch(0.28 0.03 58);
+  --primary: oklch(0.56 0.095 58);
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.96 0.012 30);
-  --secondary-foreground: oklch(0.24 0.02 264);
-  --muted: oklch(0.96 0.012 30);
-  --muted-foreground: oklch(0.53 0.02 30);
-  --accent: oklch(0.93 0.035 27);
-  --accent-foreground: oklch(0.24 0.02 264);
+  --secondary: oklch(0.955 0.016 76);
+  --secondary-foreground: oklch(0.28 0.03 58);
+  --muted: oklch(0.955 0.016 76);
+  --muted-foreground: oklch(0.54 0.025 62);
+  --accent: oklch(0.93 0.032 76);
+  --accent-foreground: oklch(0.28 0.03 58);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.91 0.01 30);
-  --input: oklch(0.91 0.01 30);
-  --ring: oklch(0.51 0.21 27);
+  --border: oklch(0.905 0.014 76);
+  --input: oklch(0.905 0.014 76);
+  --ring: oklch(0.56 0.095 58);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -113,8 +113,8 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
 
   --gradient-brand: linear-gradient(135deg, var(--brand-light), var(--brand));
-  --gradient-navy: linear-gradient(160deg, var(--navy-deep), var(--navy) 55%, oklch(0.28 0.03 20));
-  --shadow-card: 0 18px 40px -22px oklch(0.2 0.02 20 / 0.4);
+  --gradient-navy: linear-gradient(160deg, var(--navy-deep), var(--navy) 55%, oklch(0.38 0.04 62));
+  --shadow-card: 0 18px 40px -22px oklch(0.35 0.03 60 / 0.28);
 }
 
 
@@ -209,4 +209,9 @@
 @keyframes tg-ping {
   0% { transform: scale(1); opacity: 0.7; }
   80%, 100% { transform: scale(3.2); opacity: 0; }
+}
+
+@keyframes tg-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
