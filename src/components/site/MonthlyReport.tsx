@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { ChevronRight } from "lucide-react";
 import { MONTHLY_REPORT, REPORT_TOTALS } from "@/lib/monthly-report";
 
@@ -44,8 +44,8 @@ export function MonthlyReport() {
             </thead>
             <tbody>
               {MONTHLY_REPORT.map((m) => (
-                <>
-                  <tr key={m.month} className="border-b border-border/70">
+                <Fragment key={m.month}>
+                  <tr className="border-b border-border/70">
                     <th scope="row" className="px-4 py-3 text-left">
                       <button
                         type="button"
@@ -74,7 +74,7 @@ export function MonthlyReport() {
                     </td>
                   </tr>
                   {open === m.month && (
-                    <tr key={`${m.month}-daily`}>
+                    <tr>
                       <td colSpan={headers.length} className="bg-ice px-4 py-5">
                         <p className="font-display text-sm font-bold text-navy">{m.month} daily performance</p>
                         <div className="mt-3 overflow-x-auto">
@@ -118,7 +118,7 @@ export function MonthlyReport() {
                       </td>
                     </tr>
                   )}
-                </>
+                </Fragment>
               ))}
             </tbody>
             <tfoot>
