@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ArrowRight, Landmark } from "lucide-react";
 import { z } from "zod";
 import { whatsappLink } from "@/lib/site-links";
 

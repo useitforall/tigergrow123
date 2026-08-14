@@ -9,6 +9,8 @@ import { Pricing } from "@/components/site/Pricing";
 import { CoreApproach } from "@/components/site/CoreApproach";
 import { WhyChoose } from "@/components/site/WhyChoose";
 import { Backtest } from "@/components/site/Backtest";
+import { MonthlyReport } from "@/components/site/MonthlyReport";
+import { IndicatorProduct } from "@/components/site/IndicatorProduct";
 import { Partnerships } from "@/components/site/Partnerships";
 import { Testimonials } from "@/components/site/Testimonials";
 import { ContactSection } from "@/components/site/ContactSection";
@@ -44,10 +46,12 @@ function Index() {
         <ProductModels />
         <RiskModes />
         <Pricing />
+        <IndicatorProduct />
         <Partnerships />
         <CoreApproach />
         <WhyChoose />
         <Backtest />
+        <MonthlyReport />
         <Testimonials />
         <ContactSection />
         <Responsibility />
