@@ -6,7 +6,7 @@ const tiers = [
     level: "Entry Level",
     name: "Gold Partnership",
     blurb: "Ideal for new and small vendors beginning their Tiger Grow partnership journey.",
-    price: "$1,249/-",
+    price: "$1,499/-",
     period: "1 Year",
     features: [
       "Unlimited Licences (Terms & Conditions Apply)",

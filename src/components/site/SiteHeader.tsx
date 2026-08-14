@@ -1,8 +1,7 @@
 import { Youtube, Instagram, Send, MessageCircle, ChevronDown, ArrowDown } from "lucide-react";
-import logo from "@/assets/tiger-grow-mark.png.asset.json";
 import { SOCIAL_LINKS } from "@/lib/site-links";
 
-const nav = ["Home", "Software", "Models", "Modes", "Prices", "Results", "Contact"];
+const nav = ["Home", "Software", "Models", "Modes", "Prices", "Indicator", "Results", "Report", "Contact"];
 
 const socials = [
   { icon: Youtube, label: "YouTube", href: SOCIAL_LINKS.youtube },
@@ -13,11 +12,11 @@ const socials = [
 
 export function SiteHeader() {
   return (
-    <header className="surface-navy sticky top-0 z-50">
+    <header className="surface-navy relative">
       <div className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-x-8 gap-y-3 px-5 py-4">
         <a href="#home" className="flex items-center gap-3">
           <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-full bg-primary-foreground">
-            <img src={logo.url} alt="Algo Tiger Grow logo" width={44} height={44} className="h-full w-full object-contain" />
+            <img src="/images/tiger-grow-mark.png" alt="Algo Tiger Grow logo" width={44} height={44} className="h-full w-full object-contain" />
           </span>
           <span className="font-display text-2xl font-bold text-primary-foreground">
             Algo <span className="text-brand-light">Tiger Grow</span>
