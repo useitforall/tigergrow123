@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import whyChoose from "@/assets/why-choose.jpg";
+import { RiskShieldAnimation } from "@/components/site/RiskShieldAnimation";
 
 const points = [
   "MT5 Native Execution",
@@ -38,14 +38,7 @@ export function WhyChoose() {
           </ul>
         </div>
 
-        <img
-          src={whyChoose}
-          alt="Illustration of a trader analysing charts and dashboards on a laptop"
-          width={1200}
-          height={900}
-          loading="lazy"
-          className="w-full rounded-sm"
-        />
+        <RiskShieldAnimation />
       </div>
     </section>
   );

@@ -1,5 +1,4 @@
 import { Youtube, Instagram, Send, MessageCircle, Phone, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/tiger-grow-mark.png.asset.json";
 import { SOCIAL_LINKS } from "@/lib/site-links";
 
 const socials = [
@@ -16,7 +15,7 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-3">
             <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-full bg-primary-foreground">
-              <img src={logo.url} alt="Algo Tiger Grow logo" width={44} height={44} className="h-full w-full object-contain" />
+              <img src="/images/tiger-grow-mark.png" alt="Algo Tiger Grow logo" width={44} height={44} className="h-full w-full object-contain" />
             </span>
             <p className="font-display text-2xl font-bold text-primary-foreground">
               Algo <span className="text-brand-light">Tiger Grow</span>

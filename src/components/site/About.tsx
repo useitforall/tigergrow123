@@ -1,5 +1,5 @@
 import { Target, ShieldCheck, LineChart } from "lucide-react";
-import aboutTeam from "@/assets/about-team.jpg";
+import { OrderFlowAnimation } from "@/components/site/OrderFlowAnimation";
 
 const points = [
   {
@@ -24,14 +24,9 @@ export function About() {
     <section id="about" className="bg-ice py-24">
       <div className="mx-auto grid max-w-[1200px] items-center gap-14 px-5 lg:grid-cols-2">
         <div className="relative">
-          <img
-            src={aboutTeam}
-            alt="Trading team reviewing live market charts on multiple monitors"
-            width={1000}
-            height={800}
-            loading="lazy"
-            className="w-full rounded-sm object-cover shadow-[var(--shadow-card)]"
-          />
+          <div className="card-elevated bg-card p-6">
+            <OrderFlowAnimation />
+          </div>
           <div className="surface-brand absolute -top-8 right-0 grid h-32 w-32 place-items-center text-center text-primary-foreground sm:right-6">
             <div>
               <p className="font-display text-3xl font-bold">24/5</p>

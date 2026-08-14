@@ -1,13 +1,10 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import shot1 from "@/assets/backtest-1.png.asset.json";
-import shot2 from "@/assets/backtest-2.png.asset.json";
-import shot3 from "@/assets/backtest-3.png.asset.json";
 
 const shots = [
-  { url: shot1.url, label: "XAUUSD M5 — July 2026", note: "Total net profit 146 341.64" },
-  { url: shot2.url, label: "XAUUSD M5 — January 2026", note: "Total net profit 90 418.52" },
-  { url: shot3.url, label: "XAUUSD M5 — February 2026", note: "Total net profit 78 890.58" },
+  { src: "/images/backtest-1.png", label: "XAUUSD M5 — July 2026", note: "Total net profit 146 341.64" },
+  { src: "/images/backtest-2.png", label: "XAUUSD M5 — January 2026", note: "Total net profit 90 418.52" },
+  { src: "/images/backtest-3.png", label: "XAUUSD M5 — February 2026", note: "Total net profit 78 890.58" },
 ];
 
 export function BacktestGallery() {
@@ -43,9 +40,9 @@ export function BacktestGallery() {
         <div className="overflow-hidden bg-ice">
           <div className="flex transition-transform duration-500 ease-out" style={{ transform: `translateX(-${i * 100}%)` }}>
             {shots.map((s) => (
-              <div key={s.url} className="w-full shrink-0 p-4 sm:p-8">
+              <div key={s.src} className="w-full shrink-0 p-4 sm:p-8">
                 <img
-                  src={s.url}
+                  src={s.src}
                   alt={`Tiger Grow strategy tester report — ${s.label}`}
                   loading="lazy"
                   className="mx-auto w-full max-w-3xl rounded-sm bg-card shadow-[var(--shadow-card)]"
@@ -58,7 +55,7 @@ export function BacktestGallery() {
         <div className="flex justify-center gap-2 py-5">
           {shots.map((s, idx) => (
             <button
-              key={s.url}
+              key={s.src}
               aria-label={`Show ${s.label}`}
               onClick={() => setI(idx)}
               className={`h-2 rounded-full transition-all ${idx === i ? "w-8 bg-primary" : "w-2 bg-border"}`}
