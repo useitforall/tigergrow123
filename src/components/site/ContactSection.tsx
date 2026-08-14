@@ -91,7 +91,7 @@ export function ContactSection() {
           </div>
         </div>
 
-        </div>
+
 
         <div className="card-elevated mt-14 grid gap-10 p-8 sm:p-12 lg:grid-cols-2">
           <div>
