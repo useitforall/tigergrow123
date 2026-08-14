@@ -75,6 +75,24 @@ export function ContactSection() {
           ))}
         </div>
 
+        <div className="card-elevated mt-8 grid gap-6 p-8 sm:grid-cols-[auto_1fr] sm:items-center">
+          <span className="grid h-12 w-12 place-items-center rounded-full bg-accent text-primary">
+            <Landmark className="h-5 w-5" />
+          </span>
+          <div>
+            <h3 className="font-display text-lg font-bold text-navy">Bank Details</h3>
+            <div className="mt-3 grid gap-x-10 gap-y-1 text-sm text-muted-foreground sm:grid-cols-2">
+              <p>Telangana Grameen Bank</p>
+              <p>A/C No: <span className="font-semibold text-navy">79111969586</span></p>
+              <p>IFSC Code: <span className="font-semibold text-navy">TGRB0000177</span></p>
+              <p>Name: Tiger Grow Software Service</p>
+              <p>Metpally – 505325</p>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
         <div className="card-elevated mt-14 grid gap-10 p-8 sm:p-12 lg:grid-cols-2">
           <div>
             <p className="eyebrow text-primary">Contact Algo Tiger Grow</p>
