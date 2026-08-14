@@ -1,7 +1,7 @@
 import { Youtube, Instagram, Send, MessageCircle, ChevronDown, ArrowDown } from "lucide-react";
 import { SOCIAL_LINKS } from "@/lib/site-links";
 
-const nav = ["Home", "Software", "Models", "Modes", "Prices", "Results", "Contact"];
+const nav = ["Home", "Software", "Models", "Modes", "Prices", "Indicator", "Results", "Report", "Contact"];
 
 const socials = [
   { icon: Youtube, label: "YouTube", href: SOCIAL_LINKS.youtube },
