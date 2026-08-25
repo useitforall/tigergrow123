@@ -2,20 +2,7 @@ import { Check } from "lucide-react";
 import { whatsappLink } from "@/lib/site-links";
 
 const plans = [
-  {
-    letter: "B",
-    name: "Basic",
-    sub: "Essential Access For Individual Traders",
-    was: "$1999/-",
-    now: "999",
-    features: [
-      "1 Approved MT5 Account",
-      "1 Year Licence Validity",
-      "Access To All Risk Modes",
-      "Full Tiger Grow Access",
-      "Installation Assistance Included",
-    ],
-  },
+ 
   {
     letter: "P",
     name: "Premium",
