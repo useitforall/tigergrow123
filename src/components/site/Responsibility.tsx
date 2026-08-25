@@ -1,4 +1,4 @@
-import { BookOpen, Wallet, TrendingDown, UserCheck, AlertTriangle } from "lucide-react";
+import { BookOpen, Wallet, TrendingDown, UserCheck, AlertTriangle, Ban } from "lucide-react";
 
 const items = [
   {
