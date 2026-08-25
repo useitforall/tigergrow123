@@ -81,14 +81,17 @@ export function Hero() {
           </div>
 
           <p className="eyebrow mt-10 text-center text-primary-foreground/60">Works on</p>
-          <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div className="mx-auto mt-4 max-w-xs">
             {markets.map(({ icon: Icon, label }) => (
               <div
                 key={label}
-                className="rounded-sm border border-primary-foreground/15 px-3 py-4 text-center text-[0.7rem] font-semibold"
+                className="rounded-sm border border-primary-foreground/15 px-4 py-5 text-center text-sm font-semibold"
               >
-                <Icon className="mx-auto mb-2 h-5 w-5 text-brand-light" />
+                <Icon className="mx-auto mb-2 h-6 w-6 text-brand-light" />
                 {label}
+                <p className="mt-1 text-[0.65rem] font-medium tracking-wide text-primary-foreground/60">
+                  Our software works specifically with XAUUSD (Gold)
+                </p>
               </div>
             ))}
           </div>
