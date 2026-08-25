@@ -21,6 +21,11 @@ const items = [
     title: "Customer Responsibility",
     text: "Customers independently choose their broker, account, settings, leverage, lot size, and risk controls.",
   },
+  {
+    icon: Ban,
+    title: "No Refund Policy",
+    text: "All software purchases are final. No refunds, cancellations, or returns will be provided once the software has been purchased or access has been granted.",
+  },
 ];
 
 export function Responsibility() {
