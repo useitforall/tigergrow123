@@ -44,7 +44,7 @@ export function Responsibility() {
             </p>
           </div>
 
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {items.map(({ icon: Icon, title, text }) => (
               <article key={title} className="card-elevated flex flex-col p-7">
                 <span className="grid h-12 w-12 place-items-center rounded-sm bg-accent text-primary">
