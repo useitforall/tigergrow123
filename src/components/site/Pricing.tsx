@@ -7,8 +7,8 @@ const plans = [
     letter: "P",
     name: "Premium",
     sub: "Permanent Access For Serious Traders",
-    was: "$2999/-",
-    now: "1499",
+    was: "$4999/-",
+    now: "2499",
     features: [
       "1 Approved MT5 Account",
       "Lifetime Licence Duration",
