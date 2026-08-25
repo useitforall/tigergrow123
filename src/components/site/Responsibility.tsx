@@ -1,4 +1,4 @@
-import { BookOpen, Wallet, TrendingDown, UserCheck, AlertTriangle } from "lucide-react";
+import { BookOpen, Wallet, TrendingDown, UserCheck, AlertTriangle, Ban } from "lucide-react";
 
 const items = [
   {
@@ -21,6 +21,11 @@ const items = [
     title: "Customer Responsibility",
     text: "Customers independently choose their broker, account, settings, leverage, lot size, and risk controls.",
   },
+  {
+    icon: Ban,
+    title: "No Refund Policy",
+    text: "All software purchases are final. No refunds, cancellations, or returns will be provided once the software has been purchased or access has been granted.",
+  },
 ];
 
 export function Responsibility() {
@@ -39,7 +44,7 @@ export function Responsibility() {
             </p>
           </div>
 
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {items.map(({ icon: Icon, title, text }) => (
               <article key={title} className="card-elevated flex flex-col p-7">
                 <span className="grid h-12 w-12 place-items-center rounded-sm bg-accent text-primary">
