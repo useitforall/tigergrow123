@@ -1,5 +1,3 @@
-import founderPhoto from "@/assets/founder-tiger-narendra.jpg.asset.json";
-
 export function Founder() {
   return (
     <section id="founder" className="bg-ice py-20">
@@ -7,7 +5,7 @@ export function Founder() {
         <div className="relative mx-auto w-full max-w-sm">
           <div className="absolute -left-4 -top-4 h-full w-full rounded-sm border border-primary/30" aria-hidden />
           <img
-            src={founderPhoto.url}
+            src="/images/founder-tiger-narendra.jpg"
             alt="Tiger Narendra, Founder & CEO of Algo Tiger Grow"
             className="relative w-full rounded-sm object-cover shadow-lg"
             loading="lazy"
