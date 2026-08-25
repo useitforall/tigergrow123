@@ -11,12 +11,7 @@ const features = [
   "Lifetime Software Updates",
 ];
 
-const markets = [
-  { icon: Bitcoin, label: "Crypto Market" },
-  { icon: IndianRupee, label: "Indian Market" },
-  { icon: Globe, label: "Forex Market" },
-  { icon: LineChart, label: "Commodities" },
-];
+const markets = [{ icon: Gem, label: "XAUUSD (Gold)" }];
 
 export function Hero() {
   return (
