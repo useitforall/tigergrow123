@@ -93,13 +93,7 @@ export function IndicatorProduct() {
 
           <div className="rounded-sm border border-brand-light/40 bg-primary-foreground/[0.05] p-8">
             <p className="eyebrow text-brand-light">Lifetime access</p>
-            <div className="mt-4 flex items-end gap-3">
-              <span className="text-sm text-primary-foreground/60 line-through">$700</span>
-              <span className="rounded-full bg-brand-light/20 px-3 py-1 text-[0.65rem] font-bold text-brand-light">
-                50% OFF
-              </span>
-            </div>
-            <p className="font-display text-5xl font-bold text-brand-light">$350</p>
+            
             <p className="mt-1 text-[0.7rem] tracking-widest text-primary-foreground/60">
               ONE-TIME PAYMENT • PAY ONCE, USE FOR LIFETIME
             </p>
