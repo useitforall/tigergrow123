@@ -1,4 +1,4 @@
-import { Check, Bitcoin, IndianRupee, LineChart, Globe } from "lucide-react";
+import { Check, Gem } from "lucide-react";
 import { TradingAnimation } from "@/components/site/TradingAnimation";
 
 const features = [
