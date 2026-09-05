@@ -2,16 +2,31 @@ import { Check } from "lucide-react";
 import { whatsappLink } from "@/lib/site-links";
 
 const plans = [
- 
   {
-    letter: "P",
-    name: "Premium",
-    sub: "Permanent Access For Serious Traders",
-    was: "$4999/-",
-    now: "2499",
+    letter: "F",
+    name: "Free",
+    sub: "14 Days Trial Access for Beginners",
+    now: "0",
     features: [
       "1 Approved MT5 Account",
-      "Lifetime Licence Duration",
+      "14 Days Trial Period",
+      "Access To All Risk Modes",
+      "Full Algo Access",
+      "Installation Assistance Included",
+      "Free Technical Support",
+      "Software Updates During Licence Period",
+    ],
+    trial: true,
+  },
+  {
+    letter: "P",
+    name: "Standard",
+    sub: "Permanent Access For Serious Traders",
+  
+    now: "749",
+    features: [
+      "1 Approved MT5 Account",
+      "1 year Licence Duration",
       "Access To All Risk Modes",
       "Full Tiger Grow Access",
       "Lifetime Software Updates",
@@ -19,11 +34,20 @@ const plans = [
   },
   {
     letter: "F",
-    name: "Franchise",
+    name: "Premium",
+    sub: "Complete Branded Business Solution",
+    
+    now: "1299",
+    features: ["Welcome Gift","Lifetime Licence Duration", "Own Branding", "Approved Vendor Partnership", "IB Partner Code", "Technical Training"],
+    featured: true,
+  },
+  {
+    letter: "Pro",
+    name: "Pro",
     sub: "Complete Branded Business Solution",
     was: "$4,999/-",
     now: "2,499",
-    features: ["Welcome Gift", "Own Branding", "Approved Vendor Partnership", "IB Partner Code", "Technical Training"],
+    features: ["Welcome Gift", "Own Branding", "Lifetime 4 Licence Duration", "Approved Vendor Partnership", "IB Partner Code", "Technical Training"],
     featured: true,
   },
 ];
@@ -71,18 +95,24 @@ export function Pricing() {
                 {p.sub}
               </p>
 
-              <p className={`mt-7 text-sm font-semibold ${p.featured ? "" : "text-navy"}`}>
-                Actual Price: <span className="text-destructive line-through">{p.was}</span>
-              </p>
-              <span
-                className={`eyebrow mt-3 w-fit rounded-full px-3 py-1 ${
-                  p.featured ? "surface-brand text-primary-foreground" : "bg-accent text-primary"
-                }`}
-              >
-                50% OFF
-              </span>
+              {!p.trial && (
+                <>
+                  <p className={`mt-7 text-sm font-semibold ${p.featured ? "" : "text-navy"}`}>
+                    Actual Price: <span className="text-destructive line-through">{p.was}</span>
+                  </p>
+                  <span
+                    className={`eyebrow mt-3 w-fit rounded-full px-3 py-1 ${
+                      p.featured ? "surface-brand text-primary-foreground" : "bg-accent text-primary"
+                    }`}
+                  >
+                    50% OFF
+                  </span>
+                </>
+              )}
               <p className="mt-3 flex items-end gap-2">
-                <span className={`pb-1 text-xs font-semibold ${p.featured ? "" : "text-navy"}`}>Now</span>
+                <span className={`pb-1 text-xs font-semibold ${p.featured ? "" : "text-navy"}`}>
+                  {p.trial ? "Trial" : "Now"}
+                </span>
                 <span className={`font-display text-5xl font-bold ${p.featured ? "" : "text-primary"}`}>
                   ${p.now}
                 </span>
@@ -97,16 +127,22 @@ export function Pricing() {
                 ))}
               </ul>
 
-              <a
-                href={whatsappLink(`Hi Tiger Grow, I'm interested in the ${p.name} licence plan.`)}
-                target="_blank"
-                rel="noreferrer noopener"
-                className={`mt-8 inline-flex items-center justify-center rounded-sm px-5 py-3 text-sm font-semibold transition-opacity hover:opacity-90 ${
-                  p.featured ? "surface-brand text-primary-foreground" : "bg-navy text-primary-foreground"
-                }`}
-              >
-                Get {p.name}
-              </a>
+              {p.trial ? (
+                <span className="mt-8 inline-flex items-center justify-center rounded-sm border border-primary/30 bg-accent px-5 py-3 text-sm font-semibold text-primary">
+                  Start Free Trial
+                </span>
+              ) : (
+                <a
+                  href={whatsappLink(`Hi Tiger Grow, I'm interested in the ${p.name} licence plan.`)}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className={`mt-8 inline-flex items-center justify-center rounded-sm px-5 py-3 text-sm font-semibold transition-opacity hover:opacity-90 ${
+                    p.featured ? "surface-brand text-primary-foreground" : "bg-navy text-primary-foreground"
+                  }`}
+                >
+                  Get {p.name}
+                </a>
+              )}
             </article>
           ))}
         </div>
