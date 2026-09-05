@@ -17,6 +17,8 @@ import { ContactSection } from "@/components/site/ContactSection";
 import { Responsibility } from "@/components/site/Responsibility";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { EquityCalculator } from "@/components/site/EquityCalculator";
+import { PillarPlan } from "@/components/site/PillarPlan";
+
 
 
 const title = "Algo Tiger Grow — AI Algo Trading Software & Indicators";
@@ -48,6 +50,7 @@ function Index() {
         <WhatWeDo />
         <ProductModels />
         <RiskModes />
+        <PillarPlan />
         <Pricing />
         <EquityCalculator />
         <IndicatorProduct />
